@@ -2,7 +2,7 @@ package Problem_solving;
 
 class emp{
     private int Emp_id = 101;
-    private String Emp_Name = "Akbar";
+    private String Emp_Name = "kundan";
     private int Salary = 20000;
     private String Add = "xyz street";
     private String Phone;
