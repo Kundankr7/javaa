@@ -1,0 +1,17 @@
+class Vehicle {
+    // Final method cannot be overridden
+    final void start() {
+        System.out.println("Vehicle is starting...");
+    }
+}
+
+class Bike extends Vehicle {
+    
+}
+
+class Main {
+    public static void main(String[] args) {
+        Bike myBike = new Bike();
+        myBike.start(); // Output: Vehicle is starting...
+    }
+}
