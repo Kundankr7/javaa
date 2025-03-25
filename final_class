@@ -1,0 +1,14 @@
+// Final class
+final class Car {
+    void show() {
+        System.out.println("This is a car.");
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.show(); // Output: This is a car.
+    }
+}
