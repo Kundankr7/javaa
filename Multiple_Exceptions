@@ -1,0 +1,34 @@
+package sample;
+
+public class Multiple_Exceptions{
+    public static void main(String[] args){
+        try{
+            //arithmetic expression----1
+            int div = 10/0;
+            
+            // ArrayIndexOutOfBoundsException---2
+            int []numbers = {1,2,3,4,5};
+            System.out.println("My numbers:"+numbers[10]);
+            
+            //StringIndexOutOfBoundsException----3
+            String name = "Bhaumik";
+            System.out.println("My name:"+name.charAt(15));
+            
+            //NullPointerException
+            String a = null;
+            System.out.println("My String:"+a.length());
+            
+        }catch(ArithmeticException e){
+            System.out.println("My First"+e);
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("My Second"+e);
+        }catch(StringIndexOutOfBoundsException e){
+            System.out.println("My Third"+e);
+        }catch(NullPointerException e){
+            System.out.println("My Fourth"+e);
+        }
+        finally{
+            System.out.println("My Four Errors solving...");
+        }
+    }
+}
