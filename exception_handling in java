@@ -1,0 +1,9 @@
+package sample;
+
+public class Exception_Handling{
+    public static void main(String[] args){
+        //stringoutof bound Exception_Handling
+        String name = "Kundan";
+        System.out.println("my name:"+name.charAt(5));
+    }
+}
