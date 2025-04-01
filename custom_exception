@@ -1,0 +1,21 @@
+ class kundanException extends Exception {
+    public kundanException(String msg) { //constructor
+        super(msg);
+    }
+}
+
+public class CustomException {
+public static void main(String[] args) {
+        try{
+            throw new kundanException("My msg");
+
+        }catch(kundanException e){
+            System.out.println("My custom error:" +e);
+        }
+        finally{
+            System.out.println("My custom error is created");
+
+
+        }
+    }
+}
