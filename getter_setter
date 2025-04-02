@@ -1,0 +1,49 @@
+// Defining the Student class
+class Student {
+    // Private variables for encapsulation
+    private String name;
+    private int rollNumber;
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for rollNumber
+    public int getRollNumber() {
+        return rollNumber;
+    }
+
+    // Setter for rollNumber with validation
+    public void setRollNumber(int rollNumber) {
+        if (rollNumber > 0) {  // Ensuring a positive roll number
+            this.rollNumber = rollNumber;
+        } else {
+            System.out.println("Roll number must be positive.");
+        }
+    }
+}
+
+// Main class to test the Student class
+public class Main {
+    public static void main(String[] args) {
+        // Creating an instance of the Student class
+        Student student = new Student();
+
+        // Using setters to set values
+        student.setName("Alice");
+        student.setRollNumber(101);
+
+        // Using getters to retrieve and print values
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Roll Number: " + student.getRollNumber());
+
+        // Attempting to set an invalid roll number
+        student.setRollNumber(-5);  // Triggers validation
+    }
+}
